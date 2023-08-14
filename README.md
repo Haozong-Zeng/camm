@@ -1,5 +1,5 @@
 # CAMM 
-This repository contains the official implementation for the paper:
+This repository contains the personal implementation (to run on Ubuntu 22.04 & 40 series (Ada) generation GPU) for the paper:
 
 [**CAMM: Building Category-Agnostic and Animatable 3D Models from Monocular Videos**](https://camm3d.github.io/)
 
@@ -25,10 +25,10 @@ Please visit our [project page](https://camm3d.github.io/) for more qualitative 
 
 ## Installation
 
-The code is tested in Python 3.9 with cuda 11.6 on a RTX 3090 GPU.
+The code is tested in Python 3.9 with cuda 11.6 on a Ubuntu 22.04 system, with AMD EPYC 7313 & RTX 6000 Ada.
 ```
 # clone repo
-git clone --recursive https://github.com/kts707/camm
+git clone --recursive https://github.com/Haozong-Zeng/camm.git
 cd camm
 
 # install conda environment
