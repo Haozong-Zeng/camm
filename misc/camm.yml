@@ -151,3 +151,4 @@ dependencies:
     - yacs==0.1.8
     - zipp==3.7.0
     - scikit-learn
+    - setuptools==59.5.0
