@@ -4,7 +4,8 @@ import numpy as np
 import pdb
 import os
 import shutil
-
+import sys
+sys.path.insert(0, os.path.abspath('./third_party/detectron2'))
 import detectron2
 from detectron2.config import get_cfg
 from detectron2.engine import DefaultPredictor
@@ -14,7 +15,6 @@ coco_metadata = MetadataCatalog.get("coco_2017_val")
 import torch
 import torch.nn.functional as F
 import torchvision
-import sys
 curr_dir = os.path.abspath(os.getcwd())
 sys.path.insert(0,curr_dir)
 
