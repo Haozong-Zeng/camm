@@ -5,6 +5,9 @@ import pdb
 import os
 import shutil
 
+import sys
+sys.path.insert(0, os.path.abspath('./third_party/detectron2'))
+
 import detectron2
 from detectron2.config import get_cfg
 from detectron2.engine import DefaultPredictor
@@ -39,7 +42,7 @@ imgdir= '%s/JPEGImages/Full-Resolution/%s'%(odir,seqname)
 maskdir='%s/Annotations/Full-Resolution/%s'%(odir,seqname)
 dpdir='%s/Densepose/Full-Resolution/%s'%(odir,seqname)
 if os.path.exists(dpdir): shutil.rmtree(dpdir)
-os.mkdir(dpdir)
+os.makedirs(dpdir, exist_ok=True)
 
 if ishuman=='y':
     #human
